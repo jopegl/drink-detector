@@ -1,0 +1,37 @@
+n_removed,removed,accuracy,wrong
+1,pitch_min,0.9,17:48
+1,pitch_max,1.0,
+1,roll_min,1.0,
+1,roll_max,1.0,
+1,pitch_std,1.0,
+1,roll_std,1.0,
+1,largest_angle_range,1.0,
+1,time_pitch_below_-60_s,1.0,
+2,"pitch_min, pitch_max",1.0,
+2,"pitch_min, roll_min",0.8,"17:48, 18:37"
+2,"pitch_min, roll_max",0.9,17:48
+2,"pitch_min, pitch_std",1.0,
+2,"pitch_min, roll_std",0.9,17:48
+2,"pitch_min, largest_angle_range",0.9,17:48
+2,"pitch_min, time_pitch_below_-60_s",0.9,17:48
+2,"pitch_max, roll_min",1.0,
+2,"pitch_max, roll_max",1.0,
+2,"pitch_max, pitch_std",1.0,
+2,"pitch_max, roll_std",1.0,
+2,"pitch_max, largest_angle_range",1.0,
+2,"pitch_max, time_pitch_below_-60_s",1.0,
+2,"roll_min, roll_max",1.0,
+2,"roll_min, pitch_std",1.0,
+2,"roll_min, roll_std",1.0,
+2,"roll_min, largest_angle_range",1.0,
+2,"roll_min, time_pitch_below_-60_s",1.0,
+2,"roll_max, pitch_std",1.0,
+2,"roll_max, roll_std",1.0,
+2,"roll_max, largest_angle_range",1.0,
+2,"roll_max, time_pitch_below_-60_s",1.0,
+2,"pitch_std, roll_std",1.0,
+2,"pitch_std, largest_angle_range",1.0,
+2,"pitch_std, time_pitch_below_-60_s",1.0,
+2,"roll_std, largest_angle_range",1.0,
+2,"roll_std, time_pitch_below_-60_s",1.0,
+2,"largest_angle_range, time_pitch_below_-60_s",1.0,

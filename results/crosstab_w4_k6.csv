@@ -1,0 +1,6 @@
+label,idle,moving,sip
+idle,2963,16,0
+red_herring,0,15,0
+unknown,3,20,2
+water,1,100,9
+water (+red herring?),0,16,0

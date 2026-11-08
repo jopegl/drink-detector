@@ -1,0 +1,4 @@
+class,pitch_min,pitch_std,roll_std,tran_mean
+idle,-0.9,0.0,0.0,0.3
+moving,-11.5,9.9,9.6,61.8
+sip,-80.1,22.3,17.7,66.8

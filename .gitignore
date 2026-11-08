@@ -1,0 +1,20 @@
+# Python virtual environment
+venv/
+.venv/
+env/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Streamlit local settings and secrets
+.streamlit/secrets.toml
+
+# Editors / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Raw sensor log (optional: remove this line to keep it in the repo)
+accel_gryo_log_*.txt
