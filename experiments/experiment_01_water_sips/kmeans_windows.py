@@ -1,8 +1,8 @@
 """
-Step 3: k-means on sliding windows over the whole log (does NOT use the gesture split).
+Experiment 01, step 3 (main detector): k-means on sliding windows over the whole log (does NOT use the gesture split).
 
-Usage:
-    python kmeans_windows.py processed_log.csv
+Usage (from anywhere):
+    python experiments/experiment_01_water_sips/kmeans_windows.py   (reads data/processed_log.csv)
 
 Requires: pandas, numpy, scikit-learn, matplotlib
 
@@ -16,6 +16,11 @@ How it works:
   6. Only at the end are the events compared with Andrew's notes.
 """
 import sys
+from pathlib import Path
+
+HERE = Path(__file__).resolve().parent
+DATA = HERE / "data" / "processed_log.csv"
+OUT = HERE / "outputs"
 
 import numpy as np
 import pandas as pd
@@ -190,10 +195,7 @@ def plot(d, W, E, filename="kmeans_windows.png"):
 
 
 if __name__ == "__main__":
-    if len(sys.argv) < 2:
-        sys.exit("Usage: python kmeans_windows.py processed_log.csv")
-
-    d = pd.read_csv(sys.argv[1], parse_dates=["timestamp"])
+    d = pd.read_csv(sys.argv[1] if len(sys.argv) > 1 else DATA, parse_dates=["timestamp"])
     day = d.timestamp.iloc[0].strftime("%Y-%m-%d")
     print(f"Rows: {len(d)}")
 
@@ -209,9 +211,10 @@ if __name__ == "__main__":
     print("\n  Detected events:")
     print(E.assign(start=E.start.dt.strftime("%H:%M:%S"), end=E.end.dt.strftime("%H:%M:%S"))
           .to_string(index=False).replace("\n", "\n    "))
-    plot(d, W, E)
-    W.to_csv("windows_kmeans.csv", index=False)
-    E.to_csv("detected_events.csv", index=False)
+    OUT.mkdir(exist_ok=True)
+    plot(d, W, E, OUT / "kmeans_windows.png")
+    W.to_csv(OUT / "windows_kmeans.csv", index=False)
+    E.to_csv(OUT / "detected_events.csv", index=False)
 
     # --- Robustness: other window lengths -----------------------------------
     print("\n=== Robustness: other window lengths")
@@ -225,4 +228,4 @@ if __name__ == "__main__":
               f"        {len(r)}/{len(RED_HERRING_NOTES)}         |"
               f"  {len(x)} {[t.strftime('%H:%M') for t in x.start]}")
 
-    print("\nSaved: windows_kmeans.csv, detected_events.csv, kmeans_windows.png")
+    print(f"\nSaved in {OUT}: windows_kmeans.csv, detected_events.csv, kmeans_windows.png")

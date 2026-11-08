@@ -1,15 +1,19 @@
 """
-Step 4: run every analysis once and save the results in results/,
-so the interface (app.py) opens with everything ready.
+Experiment 01, step 4: run every analysis once and save the results in results/,
+so the dashboard (dashboard.py) opens with everything ready.
 
-Usage:
-    python build_results.py processed_log.csv
+Usage (from anywhere):
+    python experiments/experiment_01_water_sips/build_results.py   (reads data/processed_log.csv)
 
 Run it again whenever processed_log.csv or any analysis script changes.
 """
 import json
-import os
 import sys
+from pathlib import Path
+
+HERE = Path(__file__).resolve().parent
+DATA = HERE / "data" / "processed_log.csv"
+OUT = HERE / "results"
 import warnings
 
 import pandas as pd
@@ -19,7 +23,6 @@ import kmeans_gestures as kg
 import kmeans_windows as kw
 
 warnings.filterwarnings("ignore")
-OUT = "results"
 
 
 def window_analysis(d, window_s, k):
@@ -31,10 +34,8 @@ def window_analysis(d, window_s, k):
 
 
 if __name__ == "__main__":
-    if len(sys.argv) < 2:
-        sys.exit("Usage: python build_results.py processed_log.csv")
-    os.makedirs(OUT, exist_ok=True)
-    d = pd.read_csv(sys.argv[1], parse_dates=["timestamp"])
+    OUT.mkdir(exist_ok=True)
+    d = pd.read_csv(sys.argv[1] if len(sys.argv) > 1 else DATA, parse_dates=["timestamp"])
     day = d.timestamp.iloc[0].strftime("%Y-%m-%d")
 
     # 1. Main detector (sliding windows) for every window length and k

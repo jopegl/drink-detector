@@ -1,8 +1,8 @@
 """
-Step 2a: k-means on the gestures (one row per gesture).
+Experiment 01, step 2: k-means on the gestures (one row per gesture).
 
-Usage:
-    python kmeans_gestures.py processed_log.csv
+Usage (from anywhere):
+    python experiments/experiment_01_water_sips/kmeans_gestures.py   (reads data/processed_log.csv)
 
 Requires: pandas, numpy, scikit-learn
 
@@ -10,6 +10,11 @@ k-means does NOT use the 'label' column. Labels appear only at the end,
 to check whether the groups k-means found match Andrew's notes.
 """
 import sys
+from pathlib import Path
+
+HERE = Path(__file__).resolve().parent
+DATA = HERE / "data" / "processed_log.csv"
+OUT = HERE / "outputs"
 
 import numpy as np
 import pandas as pd
@@ -86,10 +91,7 @@ def run_kmeans(F, columns, k=K):
 
 
 if __name__ == "__main__":
-    if len(sys.argv) < 2:
-        sys.exit("Usage: python kmeans_gestures.py processed_log.csv")
-
-    F = features(read(sys.argv[1]))
+    F = features(read(sys.argv[1] if len(sys.argv) > 1 else DATA))
 
     feature_sets = {
         "all": [c for c in F.columns if c not in ("event", "start", "label")],
@@ -105,5 +107,6 @@ if __name__ == "__main__":
             items = ", ".join(f"{s[:5]} [{lab}]" for s, lab in zip(x.start, x.label))
             print(f"  group {g}: {items}")
 
-    F.round(2).to_csv("gestures_kmeans.csv", index=False)
-    print("\nSaved: gestures_kmeans.csv")
+    OUT.mkdir(exist_ok=True)
+    F.round(2).to_csv(OUT / "gestures_kmeans.csv", index=False)
+    print(f"\nSaved: {OUT / 'gestures_kmeans.csv'}")

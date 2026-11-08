@@ -1,0 +1,8 @@
+start,end,type,n_windows,window_types,andrew_note
+2026-11-08 11:47:17.785714,2026-11-08 11:47:35.400000,yaw down,8,"small movement x4, yaw down x4",right (47:20)
+2026-11-08 11:47:49.200000,2026-11-08 11:48:02.571428,yaw down,6,"yaw down x4, small movement x2",right (47:57)
+2026-11-08 11:48:08.466666,2026-11-08 11:48:24.571428,yaw up,7,"yaw up x5, small movement x2",up-left-down (48:23)
+2026-11-08 11:49:25.583333,2026-11-08 11:49:37.142857,yaw down,5,"yaw down x3, small movement x2",right (49:27)
+2026-11-08 11:50:10.928571,2026-11-08 11:50:20.500000,small movement,4,small movement x4,left (50:16)
+2026-11-08 11:50:45.714285,2026-11-08 11:50:55.333333,small movement,4,small movement x4,left (50:47)
+2026-11-08 11:51:35.200000,2026-11-08 11:51:45.076923,yaw down,4,"yaw down x3, small movement x1",right (51:39)

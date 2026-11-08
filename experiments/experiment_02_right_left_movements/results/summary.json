@@ -1,0 +1,7 @@
+{
+  "default_window_s": 4.0,
+  "default_k": 4,
+  "stable_runs": 20,
+  "n_runs": 20,
+  "n_windows": 142
+}

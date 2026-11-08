@@ -1,0 +1,13 @@
+{
+  "number": 1,
+  "title": "Water sip detection",
+  "date": "2026-11-04",
+  "summary": "Andrew wore the wrist sensor for ~1 h 45 min and noted when he drank water. Goal: find the sips from the sensor data alone.",
+  "result": "9/9 sips found, red herring not flagged, 1 likely unannotated sip (17:29)",
+  "method": "k-means on 4 s windows (k = 3)",
+  "raw_log": "accel_gryo_log_20261104_183756.txt",
+  "processed_log": "processed_log.csv",
+  "rate_hz": 14.0,
+  "water_notes": ["16:53", "16:59", "17:19", "17:25", "17:49", "18:10", "18:20", "18:30", "18:37"],
+  "red_herring_notes": ["18:35"]
+}

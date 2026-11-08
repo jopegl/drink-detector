@@ -1,14 +1,18 @@
 """
-Step 2b: robustness checks for the gesture-level k-means (kmeans_gestures.py).
+Experiment 01, step 2b: robustness checks for the gesture-level k-means (kmeans_gestures.py).
 
-Usage:
-    python evaluate_kmeans.py processed_log.csv
-    (kmeans_gestures.py must be in the same folder)
+Usage (from anywhere):
+    python experiments/experiment_01_water_sips/evaluate_kmeans.py   (reads data/processed_log.csv)
 
 Requires: pandas, numpy, scikit-learn, matplotlib
 """
 import itertools
 import sys
+from pathlib import Path
+
+HERE = Path(__file__).resolve().parent
+DATA = HERE / "data" / "processed_log.csv"
+OUT = HERE / "outputs"
 import warnings
 
 import numpy as np
@@ -116,10 +120,7 @@ def plot_pca(F, res, filename="kmeans_pca.png"):
 
 
 if __name__ == "__main__":
-    if len(sys.argv) < 2:
-        sys.exit("Usage: python evaluate_kmeans.py processed_log.csv")
-
-    F, res, removal = evaluate(features(read(sys.argv[1])))
+    F, res, removal = evaluate(features(read(sys.argv[1] if len(sys.argv) > 1 else DATA)))
     i1729 = F.start.str[:5].eq("17:29")
     print(f"1) Accuracy on the {res['n_annotated']} annotated gestures: {res['accuracy'] * 100:.0f}% "
           f"| 17:29 -> {F.kmeans_says[i1729].iloc[0]}")
@@ -135,4 +136,5 @@ if __name__ == "__main__":
     print(F[["start", "label", "margin"]].to_string(index=False))
     print("5) k=3:", dict(enumerate(res["k3_groups"])))
     print("6) PCA explained variance:", np.round(res["pca_variance"], 2))
-    plot_pca(F, res)
+    OUT.mkdir(exist_ok=True)
+    plot_pca(F, res, OUT / "kmeans_pca.png")
