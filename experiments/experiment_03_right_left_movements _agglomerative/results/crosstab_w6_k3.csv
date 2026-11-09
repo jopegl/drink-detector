@@ -1,0 +1,6 @@
+label,idle,yaw down,yaw up
+idle,55,4,1
+left,1,6,0
+right,1,13,0
+unknown,5,1,0
+up-left-down,2,1,3
