@@ -1,6 +1,6 @@
 {
   "number": 3,
-  "title": "Right / left movements",
+  "title": "Right / left movements (Agglomerative Clustering)",
   "date": "2026-11-08",
   "summary": "5-minute recording in which Andrew made right, left and up-left-down movements. Goal: tell the movement types apart.",
   "result": "7/7 noted movements classified correctly with 4 s windows and k = 4 (proof of concept, very little data)",
