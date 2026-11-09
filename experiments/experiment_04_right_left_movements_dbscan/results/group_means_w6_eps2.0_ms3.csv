@@ -1,0 +1,4 @@
+group,name,windows,yaw_min,yaw_max,roll_max,pitch_min,tran_mean
+-1,unusual,19,-74.1,26.2,22.4,-16.1,35.4
+0,idle,70,-3.3,0.7,4.4,-1.1,3.1
+1,yaw down,4,-70.4,1.6,22.1,-4.2,31.5

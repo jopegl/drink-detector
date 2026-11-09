@@ -1,10 +1,10 @@
 {
-  "number": 3,
+  "number": 4,
   "title": "Right / left movements",
   "date": "2026-11-08",
   "summary": "5-minute recording in which Andrew made right, left and up-left-down movements. Goal: tell the movement types apart.",
   "result": "7/7 noted movements classified correctly with 4 s windows and k = 4 (proof of concept, very little data)",
-  "method": "Agglomerative clustering on 4 s windows (k = 4), angles relative to the resting position",
+  "method": "DBSCAN on 4 s windows (k = 4), angles relative to the resting position",
   "raw_log": "gyro_log_20261108_115151.txt",
   "processed_log": "processed_movements.csv",
   "rate_hz": 13.7,

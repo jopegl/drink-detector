@@ -1,0 +1,6 @@
+label,idle,small movement,unusual
+idle,110,2,15
+left,1,2,12
+right,1,0,27
+unknown,6,2,2
+up-left-down,2,0,10
