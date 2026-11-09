@@ -1,0 +1,14 @@
+{
+  "default_window_s": 4.0,
+  "default_k": 4,
+  "stable_runs": 9,
+  "n_runs": 20,
+  "best_k_by_bic": {
+    "2": 6,
+    "3": 5,
+    "4": 4,
+    "5": 6,
+    "6": 6
+  },
+  "n_windows": 142
+}

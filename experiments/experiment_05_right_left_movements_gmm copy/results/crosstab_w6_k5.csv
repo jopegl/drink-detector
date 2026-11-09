@@ -1,0 +1,6 @@
+label,idle,small movement,yaw down,yaw up
+idle,36,20,4,0
+left,0,1,6,0
+right,0,0,14,0
+unknown,0,5,1,0
+up-left-down,0,1,2,3
