@@ -1,0 +1,12 @@
+{
+  "number": 11,
+  "title": "Right / left 11-11 (rules)",
+  "date": "2026-11-11",
+  "summary": "Same 11/11 recording as experiment 06 (right / left arm movements among natural ones). This experiment uses simple rules: a rest/active state machine to find events and a single-threshold rule to tell R from L, as the baseline other methods must beat. Truth (video times + Andrew's notes) is used only to evaluate.",
+  "result": "One-threshold rule 'R if pitch_max >= 51' gets 16/19 in leave-one-out; the rule from experiment 02 gets 11/19 (does not transfer)",
+  "method": "State machine for detection + one-threshold rule (OneR) for R/L, tested with leave-one-out; also tests the rule from experiment 02",
+  "raw_log": "gyro_log_20261111_151520.txt",
+  "processed_log": "processed_log.csv",
+  "data_dir": "../experiment_06_rl_1111_kmeans/data",
+  "rate_hz": 13.9
+}

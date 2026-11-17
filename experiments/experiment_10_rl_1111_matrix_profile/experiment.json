@@ -1,0 +1,12 @@
+{
+  "number": 10,
+  "title": "Right / left 11-11 (Matrix Profile)",
+  "date": "2026-11-11",
+  "summary": "Same 11/11 recording as experiment 06 (right / left arm movements among natural ones). This experiment finds repeated stretches (motifs) and unusual ones (discords) in the continuous signal with the Matrix Profile. Truth (video times + Andrew's notes) is used only to evaluate.",
+  "result": "With 4 s windows, when a movement's most similar stretch is another movement, it is of the same type in 8/9 cases (11/12 with 6 s windows)",
+  "method": "Matrix Profile on the continuous signal (drift-free angles, 4 s windows): nearest-neighbour search for repeated stretches (motifs) and unusual ones (discords)",
+  "raw_log": "gyro_log_20261111_151520.txt",
+  "processed_log": "processed_log.csv",
+  "data_dir": "../experiment_06_rl_1111_kmeans/data",
+  "rate_hz": 13.9
+}

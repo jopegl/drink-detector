@@ -1,0 +1,44 @@
+{
+  "default": {
+    "signal": "angles",
+    "m_s": 4
+  },
+  "detection": {
+    "truth_total": 23,
+    "truth_found": 23,
+    "rl_total": 19,
+    "rl_found": 19,
+    "events": 25,
+    "events_without_truth": 2
+  },
+  "nn": {
+    "n_rl": 19,
+    "nn_on_event": 9,
+    "nn_on_rl": 9,
+    "nn_same_label": 8
+  },
+  "others": {
+    "A": {
+      "truth": "?",
+      "mp_percentile": 42.9,
+      "nn": "R"
+    },
+    "B": {
+      "truth": "?",
+      "mp_percentile": 50.9,
+      "nn": "no event"
+    },
+    "O": {
+      "truth": "other?",
+      "mp_percentile": 10.0,
+      "nn": "L"
+    },
+    "V": {
+      "truth": "other?",
+      "mp_percentile": 32.4,
+      "nn": "\u2014"
+    }
+  },
+  "discords_on_events": 0,
+  "n_discords": 10
+}

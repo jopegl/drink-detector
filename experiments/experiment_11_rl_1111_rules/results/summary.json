@@ -1,0 +1,42 @@
+{
+  "detection": {
+    "truth_total": 23,
+    "truth_found": 23,
+    "rl_total": 19,
+    "rl_found": 19,
+    "events": 25,
+    "events_without_truth": 2
+  },
+  "rules": {
+    "n": 19,
+    "exp02_correct": 11,
+    "loo_correct": 16,
+    "rule": {
+      "train_accuracy": 0.9473684210526315,
+      "feature": "pitch_max",
+      "threshold": 51.25,
+      "side": "R"
+    },
+    "loo_features": {
+      "pitch_max": 19
+    }
+  },
+  "others": {
+    "A": {
+      "truth": "?",
+      "one_rule": "L"
+    },
+    "B": {
+      "truth": "?",
+      "one_rule": "L"
+    },
+    "O": {
+      "truth": "other?",
+      "one_rule": "L"
+    },
+    "V": {
+      "truth": "other?",
+      "one_rule": "L"
+    }
+  }
+}

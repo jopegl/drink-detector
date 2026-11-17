@@ -1,0 +1,58 @@
+{
+  "default": {
+    "k": 2
+  },
+  "default_high": 55.0,
+  "detection": {
+    "truth_total": 23,
+    "truth_found": 23,
+    "rl_total": 19,
+    "rl_found": 19,
+    "events": 25,
+    "events_without_truth": 2
+  },
+  "evaluation": {
+    "correct": 15,
+    "n": 19,
+    "accuracy": 0.7894736842105263,
+    "ari": 0.3048780487804878,
+    "mapping": {
+      "0": "R",
+      "1": "L"
+    }
+  },
+  "others": {
+    "A": {
+      "truth": "?",
+      "group": "0",
+      "named_as": "R"
+    },
+    "B": {
+      "truth": "?",
+      "group": "1",
+      "named_as": "L"
+    },
+    "O": {
+      "truth": "other?",
+      "group": "1",
+      "named_as": "L"
+    },
+    "V": {
+      "truth": "other?",
+      "group": "1",
+      "named_as": "L"
+    }
+  },
+  "scalars": {
+    "bic": 1080.0
+  },
+  "robustness": {
+    "settings": 9,
+    "accuracy_min": 0.263,
+    "accuracy_median": 0.684,
+    "accuracy_max": 0.895,
+    "share_at_least_90pct": 0.0
+  },
+  "stable_runs": 2,
+  "n_runs": 20
+}

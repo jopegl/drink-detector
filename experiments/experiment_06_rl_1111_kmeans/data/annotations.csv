@@ -1,0 +1,24 @@
+id,andrew_note,log_start,log_end,label,video_shows,time_confidence
+A,,14:27:45,14:27:49,?,hand leaves frame toward lower-left (fist) and returns,high
+B,,,14:31:22,?,arm already out of frame; sweeps back in from the left,medium
+C,14:33 L,14:33:05,14:33:09,L,hand leaves toward upper-left and returns,high
+D,14:35 R,14:35:01,14:35:05,R,hand leaves toward upper-left and returns,high
+E,14:38 L,14:38:44,14:38:48,L,hand leaves toward the top holding a sheet of paper,high
+F,14:41 R,14:41:02,14:41:05,R,hand leaves toward upper-left and returns,high
+G,14:43 R,14:42:53,14:42:57,R,hand leaves toward upper-left and returns,high
+H,14:44 L,14:44:04,14:44:07,L,two fast sweeps out to the left and back,high
+I,14:46 R,14:46:23,14:46:27,R,hand goes to the top edge with the pen and comes back,medium
+J,14:49 L,,14:49:17,L,hand already out of frame; returns from the top,medium
+K,14:51 L,14:51:31,14:51:34,L,hand leaves toward upper-left and returns,high
+L,14:54 R,14:53:54,14:53:57,R,hand leaves toward upper-left and returns,high
+M,14:56 L,14:56:24,14:56:25,L,fast sweep out to the left and back,high
+N,14:59 R,14:59:04,14:59:05,R,very brief exit to upper-left,medium
+O,,15:00:04,15:00:06,other?,"wrist twist / hand repositioning, inside the frame",medium
+P,15:01 R,15:01:02,15:01:05,R,hand leaves toward upper-left and returns,high
+Q,15:04 R,15:04:02,15:04:06,R,hand leaves toward upper-left and returns,high
+R,15:06 L,,15:06:30,L,"hand at the upper-left edge, returns from the left",medium
+S,15:08 L,15:08:16,15:08:18,L,"fast sweep to the left, hand returns from the top",high
+T,15:10 R,,,R,no clear exit: hand stays at the left edge,low
+U,15:12 L,15:12:26,15:12:27,L,only paper flipping visible,low
+V,,15:13:04,15:13:07,other?,"reaches toward the top of the desk and back, inside the frame",medium
+W,15:15 R,15:15:06,15:15:13,R,"leaves toward upper-left and returns, twice",medium

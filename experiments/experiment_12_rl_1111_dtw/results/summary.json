@@ -1,0 +1,51 @@
+{
+  "default": {
+    "channels": "angles",
+    "norm": "raw"
+  },
+  "detection": {
+    "truth_total": 23,
+    "truth_found": 23,
+    "rl_total": 19,
+    "rl_found": 19,
+    "events": 25,
+    "events_without_truth": 2
+  },
+  "dtw": {
+    "n": 19,
+    "correct_1nn": 19,
+    "cluster": {
+      "correct": 10,
+      "n": 19,
+      "accuracy": 0.5263157894736842,
+      "ari": 0.0,
+      "mapping": {
+        "0": "R",
+        "1": "no R/L"
+      }
+    },
+    "typical_nn_dist": 8.530007869550143
+  },
+  "others": {
+    "A": {
+      "truth": "?",
+      "nn_label": "R",
+      "unusualness": 0.85
+    },
+    "B": {
+      "truth": "?",
+      "nn_label": "L",
+      "unusualness": 0.8
+    },
+    "O": {
+      "truth": "other?",
+      "nn_label": "L",
+      "unusualness": 1.52
+    },
+    "V": {
+      "truth": "other?",
+      "nn_label": "L",
+      "unusualness": 1.17
+    }
+  }
+}

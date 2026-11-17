@@ -1,0 +1,13 @@
+high,channels,norm,setting,n,correct_1nn,acc_1nn,cluster_correct,cluster_ari,text
+40,angles,raw,"angles, raw",19,19,1.0,11,0.002,1-NN 19/19<br>clusters 11/19
+40,angles,z,"angles, z",19,19,1.0,11,0.012,1-NN 19/19<br>clusters 11/19
+40,rates,raw,"rates, raw",19,19,1.0,11,0.012,1-NN 19/19<br>clusters 11/19
+40,rates,z,"rates, z",19,18,0.947,11,0.012,1-NN 18/19<br>clusters 11/19
+55,angles,raw,"angles, raw",19,19,1.0,10,0.0,1-NN 19/19<br>clusters 10/19
+55,angles,z,"angles, z",19,19,1.0,10,0.0,1-NN 19/19<br>clusters 10/19
+55,rates,raw,"rates, raw",19,19,1.0,11,0.012,1-NN 19/19<br>clusters 11/19
+55,rates,z,"rates, z",19,18,0.947,10,0.0,1-NN 18/19<br>clusters 10/19
+70,angles,raw,"angles, raw",19,19,1.0,10,0.0,1-NN 19/19<br>clusters 10/19
+70,angles,z,"angles, z",19,19,1.0,19,1.0,1-NN 19/19<br>clusters 19/19
+70,rates,raw,"rates, raw",19,19,1.0,11,0.012,1-NN 19/19<br>clusters 11/19
+70,rates,z,"rates, z",19,18,0.947,10,0.0,1-NN 18/19<br>clusters 10/19

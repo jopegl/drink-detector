@@ -1,0 +1,12 @@
+{
+  "number": 8,
+  "title": "Right / left 11-11 (DBSCAN)",
+  "date": "2026-11-11",
+  "summary": "Same 11/11 recording as experiment 06 (right / left arm movements among natural ones), grouped with dbscan instead of k-means. Truth (video times + Andrew's notes) is used only to evaluate.",
+  "result": "6/19 R/L correct at the default (most events become noise); best setting 10/19: too few events for DBSCAN",
+  "method": "DBSCAN (eps = 3.0, min_samples = 3) on one feature card per detected event; noise = unusual",
+  "raw_log": "gyro_log_20261111_151520.txt",
+  "processed_log": "processed_log.csv",
+  "data_dir": "../experiment_06_rl_1111_kmeans/data",
+  "rate_hz": 13.9
+}
