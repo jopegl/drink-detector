@@ -1,0 +1,12 @@
+{
+  "number": 13,
+  "title": "Red herrings 11-20",
+  "date": "2026-11-20",
+  "summary": "New 11/20 recording with 24 notes from Andrew to the second: 9 right, 7 left and 8 red herrings (random movements). Goal: tell the red herrings apart from the right / left movements. Notes are used only to evaluate, with leave-one-out for every method that learns from them.",
+  "result": "DTW unusualness, with no red herring examples, caught 8/8 red herrings with 2/16 false alarms (AUC 0.98, 0.97-0.98 in every setting with angles); supervised methods 21/24 (R/L/RH)",
+  "method": "Same drift removal and event detection as experiments 06-12 (peaks merged only within 6 s). Compared: one rule, logistic regression, DTW template matching, DTW unusualness with no red herring examples, and 11/11 templates transferred",
+  "raw_log": "gyro_log_20261120_153532.txt",
+  "processed_log": "processed_log.csv",
+  "data_dir": "data",
+  "rate_hz": 13.9
+}

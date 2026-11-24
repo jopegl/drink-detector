@@ -1,0 +1,179 @@
+{
+  "default": {
+    "high": 40.0,
+    "min_gap_s": 6.0,
+    "channels": "angles"
+  },
+  "threshold": 1.5,
+  "detection": {
+    "notes": 24,
+    "notes_matched": 24,
+    "by_label": {
+      "R": "9/9",
+      "L": "7/7",
+      "RH": "8/8"
+    },
+    "events": 33,
+    "events_without_note": 9,
+    "note_lag_median_s": 3.8
+  },
+  "results": {
+    "rule_found": {
+      "feature": "yaw_min",
+      "threshold": -5.8,
+      "direction": ">"
+    },
+    "rule": {
+      "correct": 17,
+      "n": 24,
+      "rh_caught": "2/8",
+      "false_alarms": "1/16",
+      "tp": 2,
+      "fp": 1,
+      "fn": 6,
+      "tn": 15
+    },
+    "logreg": {
+      "correct": 21,
+      "n": 24,
+      "confusion": {
+        "L": {
+          "L": 6,
+          "R": 0,
+          "RH": 0
+        },
+        "R": {
+          "L": 0,
+          "R": 9,
+          "RH": 2
+        },
+        "RH": {
+          "L": 1,
+          "R": 0,
+          "RH": 6
+        }
+      }
+    },
+    "logreg_binary": {
+      "correct": 21,
+      "n": 24,
+      "rh_caught": "6/8",
+      "false_alarms": "1/16",
+      "tp": 6,
+      "fp": 1,
+      "fn": 2,
+      "tn": 15
+    },
+    "dtw": {
+      "correct": 21,
+      "n": 24,
+      "confusion": {
+        "L": {
+          "L": 7,
+          "R": 0,
+          "RH": 1
+        },
+        "R": {
+          "L": 0,
+          "R": 9,
+          "RH": 2
+        },
+        "RH": {
+          "L": 0,
+          "R": 0,
+          "RH": 5
+        }
+      }
+    },
+    "dtw_binary": {
+      "correct": 21,
+      "n": 24,
+      "rh_caught": "5/8",
+      "false_alarms": "0/16",
+      "tp": 5,
+      "fp": 0,
+      "fn": 3,
+      "tn": 16
+    },
+    "unusual": {
+      "correct": 22,
+      "n": 24,
+      "rh_caught": "8/8",
+      "false_alarms": "2/16",
+      "tp": 8,
+      "fp": 2,
+      "fn": 0,
+      "tn": 14,
+      "auc": 0.984,
+      "typical_dist": 6.634666042849962
+    },
+    "transfer": {
+      "rl_correct": 10,
+      "rl_n": 16,
+      "auc": 0.973
+    },
+    "transfer_unusual": {
+      "correct": 19,
+      "n": 24,
+      "rh_caught": "8/8",
+      "false_alarms": "5/16",
+      "tp": 8,
+      "fp": 5,
+      "fn": 0,
+      "tn": 11
+    }
+  },
+  "unnoted": {
+    "2": {
+      "time": "15:24:13",
+      "unusualness": 1.0,
+      "dtw_pred": "L"
+    },
+    "4": {
+      "time": "15:25:42",
+      "unusualness": 4.9,
+      "dtw_pred": "RH"
+    },
+    "7": {
+      "time": "15:26:32",
+      "unusualness": 0.72,
+      "dtw_pred": "R"
+    },
+    "12": {
+      "time": "15:27:44",
+      "unusualness": 0.73,
+      "dtw_pred": "R"
+    },
+    "16": {
+      "time": "15:29:30",
+      "unusualness": 1.07,
+      "dtw_pred": "R"
+    },
+    "21": {
+      "time": "15:31:34",
+      "unusualness": 1.18,
+      "dtw_pred": "R"
+    },
+    "22": {
+      "time": "15:31:41",
+      "unusualness": 1.2,
+      "dtw_pred": "R"
+    },
+    "24": {
+      "time": "15:32:03",
+      "unusualness": 0.88,
+      "dtw_pred": "R"
+    },
+    "32": {
+      "time": "15:35:10",
+      "unusualness": 1.28,
+      "dtw_pred": "R"
+    }
+  },
+  "robustness": {
+    "settings": 18,
+    "auc_min": 0.712,
+    "auc_median": 0.872,
+    "auc_max": 0.984
+  }
+}

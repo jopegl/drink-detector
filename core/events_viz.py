@@ -12,7 +12,7 @@ import streamlit as st
 from core import events as ev
 from core import viz
 
-LABEL_COLORS = {"R": "#2b8cbe", "L": "#e6550d", "?": "#9e9ac8", "other?": "#31a354", "—": "#bdbdbd"}
+LABEL_COLORS = {"R": "#2b8cbe", "L": "#e6550d", "?": "#9e9ac8", "other?": "#31a354", "RH": "#31a354", "—": "#bdbdbd"}
 NAMED_COLORS = {"R": "#2b8cbe", "L": "#e6550d", "tie": "#9e9ac8", "no R/L": "#31a354",
                 "unusual": "#636363", "not grouped": "#bdbdbd"}
 
