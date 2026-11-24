@@ -10,6 +10,8 @@ from core import events_viz as evz
 from core import viz
 from core.experiments import load_info
 
+evz.LABEL_COLORS.setdefault("RH", "#31a354")   # red herring colour (works even with an older core/events_viz.py)
+
 HERE = Path(__file__).resolve().parent
 info = load_info(HERE)
 d, E, S, R = evz.load_page(HERE, info)
